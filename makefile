@@ -1,6 +1,7 @@
 XDG_CONFIG_HOME ?= ~/.config
 
 all: install
+both: install a
 
 install:
 	mkdir -p "${XDG_CONFIG_HOME}"

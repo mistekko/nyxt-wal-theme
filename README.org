@@ -1,0 +1,10 @@
+* Limitations
+This theme will not work well with most automatically generated palettes. It's intended for use by those who use [Py]wal[16] and its template-filling and colour-switching abilities mainly for switching between hand-tweaked, deliberately laid-out colour schemes.
+
+The way I've written this theme doesn't yet allow for runtime-updating of Nyxt's colours; expect this to change in the future---perhaps as soon as tomorrow.
+
+* Installation
+=make install= installs the template file.
+=make add-to-conf= appends some code to your config file which tells Nyxt to load the theme
+=make both= does both.
+
