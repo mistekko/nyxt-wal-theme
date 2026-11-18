@@ -1,11 +1,12 @@
 XDG_CONFIG_HOME ?= ~/.config
+makefile_dir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 all: install
 both: install a
 
 install:
 	mkdir -p "${XDG_CONFIG_HOME}"
-	ln -fs nyxt-wal-colours-theme.lisp "${XDG_CONFIG_HOME}/wal/templates/nyxt-wal-colours-theme.lisp"
+	ln -fs ${makefile_dir}/nyxt-wal-colours-theme.lisp "${XDG_CONFIG_HOME}/wal/templates/nyxt-wal-colours-theme.lisp"
 
 	@echo # it's rude modify people's config files without asking
 	@echo "If you'd like the four lines of code needed to load and en-"
